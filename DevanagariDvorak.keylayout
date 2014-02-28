@@ -1,8 +1,8 @@
 <?XML version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.7 on 2014-02-28 at 15:37 (CET)-->
-<!--Last edited by Ukelele version 2.2.7 on 2014-02-28 at 16:51 (CET)-->
-<keyboard group="126" id="-12663" name="New Keyboard" maxout="3">
+<!--Last edited by Ukelele version 2.2.7 on 2014-02-28 at 22:58 (CET)-->
+<keyboard group="126" id="-12663" name="Devanagari Dvorak" maxout="3">
     <layouts>
         <layout first="0" last="17" modifiers="Modifiers" mapSet="ANSI"/>
         <layout first="18" last="18" modifiers="Modifiers" mapSet="JIS"/>
@@ -40,11 +40,15 @@
             <key code="3" action="उ 1"/>
             <key code="4" action="ो 14"/>
             <key code="5" action="इ 1"/>
+            <key code="6" action=":"/>
             <key code="7" action="ङ"/>
             <key code="8" action="ो 5"/>
             <key code="9" action="क"/>
             <key code="10" action="&#x0027;"/>
             <key code="11" action="श"/>
+            <key code="12" action="&#x0027; 1"/>
+            <key code="13" action=","/>
+            <key code="14" action=", 1"/>
             <key code="15" action="ो 11"/>
             <key code="16" action="फ़"/>
             <key code="17" action="य"/>
@@ -60,20 +64,25 @@
             <key code="27" action="["/>
             <key code="28" action="८"/>
             <key code="29" action="९ 1"/>
+            <key code="30" action="+ 1"/>
             <key code="31" action="र"/>
             <key code="32" action="ो 3"/>
+            <key code="33" action="?"/>
             <key code="34" action="च"/>
             <key code="35" action="ौ 2"/>
             <key code="36" action="&#x000D;"/>
             <key code="37" action="त"/>
             <key code="38" action="ो 12"/>
+            <key code="39" action="-"/>
             <key code="40" action="ो 8"/>
             <key code="41" action="a"/>
+            <key code="42" action="\"/>
             <key code="44" action="ो 7"/>
             <key code="45" action="ब"/>
             <key code="46" action="म"/>
             <key code="47" action="ौ 3"/>
             <key code="48" action="&#x0009;"/>
+            <key code="50" action="~"/>
             <key code="51" action="&#x0008;"/>
             <key code="53" action="&#x001B;"/>
             <key code="64" output="&#x0010;"/>
@@ -119,20 +128,42 @@
             <key code="3" action="उ"/>
             <key code="4" action="ो 9"/>
             <key code="5" action="ई 1"/>
+            <key code="6" action=": 2"/>
             <key code="7" action="ख़"/>
             <key code="8" action="झ"/>
             <key code="9" action="ख"/>
+            <key code="10" action="0"/>
+            <key code="12" action="a 1"/>
+            <key code="13" action="."/>
+            <key code="14" action=". 1"/>
             <key code="15" action="फ"/>
+            <key code="18" action="0 1"/>
+            <key code="19" action="0 2"/>
+            <key code="20" action="#"/>
+            <key code="21" action="%"/>
+            <key code="22" action="&#x0026;"/>
+            <key code="23" action="^"/>
+            <key code="24" action="] 1"/>
+            <key code="25" action=")"/>
+            <key code="26" action="*"/>
+            <key code="27" action="{"/>
+            <key code="28" action="9"/>
+            <key code="29" action="}"/>
+            <key code="30" action="+"/>
             <key code="31" action="ो 2"/>
             <key code="32" action="ग"/>
+            <key code="33" action="/"/>
             <key code="34" action="ो 4"/>
             <key code="36" action="&#x000D; 1"/>
             <key code="37" action="औ 1"/>
+            <key code="39" action="_"/>
             <key code="40" action="औ"/>
             <key code="41" action="श 1"/>
+            <key code="42" action="|"/>
             <key code="44" action="ो 6"/>
             <key code="45" action="ळ"/>
             <key code="48" action="&#x0009; 1"/>
+            <key code="50" action=": 1"/>
             <key code="51" action="&#x0008; 1"/>
             <key code="53" action="&#x001B; 1"/>
             <key code="64" output="&#x0010;"/>
@@ -172,7 +203,12 @@
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="2">
-            <key code="0" output=""/>
+            <key code="0" action="action 2"/>
+            <key code="1" action="ो 15"/>
+            <key code="2" action="े"/>
+            <key code="3" action="े 1"/>
+            <key code="5" action="े 2"/>
+            <key code="31" action="्े"/>
             <key code="36" output="&#x000D;"/>
             <key code="48" output="&#x0009;"/>
             <key code="51" output="&#x0008;"/>
@@ -256,7 +292,9 @@
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="4">
-            <key code="0" output=""/>
+            <key code="0" action="action 3"/>
+            <key code="1" action="ो 16"/>
+            <key code="5" action="ी"/>
             <key code="31" output="ऋ"/>
             <key code="36" output="&#x000D;"/>
             <key code="40" action="ो 10"/>
@@ -319,6 +357,14 @@
         </keyMap>
     </keyMapSet>
     <actions>
+        <action id="#">
+            <when state="none" output="#"/>
+            <when state="State 0" output="#"/>
+        </action>
+        <action id="%">
+            <when state="none" output="%"/>
+            <when state="State 0" output="$"/>
+        </action>
         <action id="&#x000D;">
             <when state="none" output="&#x000D;"/>
             <when state="State 0" output="&#x000D;"/>
@@ -448,21 +494,121 @@
             <when state="none" output="&#x0010;"/>
             <when state="State 0" output="&#x0010;"/>
         </action>
+        <action id="&#x0026;">
+            <when state="none" output="&#x0026;"/>
+            <when state="State 0" output="^"/>
+        </action>
         <action id="&#x0027;">
             <when state="none" next="&#x0027;"/>
             <when state="State 0" output="&#x0027;"/>
+        </action>
+        <action id="&#x0027; 1">
+            <when state="none" output="&#x0027;"/>
+            <when state="State 0" output="&#x0027;"/>
+        </action>
+        <action id=")">
+            <when state="none" output=")"/>
+            <when state="State 0" output="("/>
+        </action>
+        <action id="*">
+            <when state="none" output="*"/>
+            <when state="State 0" output="&#x0026;"/>
+        </action>
+        <action id="+">
+            <when state="none" output="+"/>
+            <when state="State 0" output="+"/>
+        </action>
+        <action id="+ 1">
+            <when state="none" output="+"/>
+            <when state="State 0" output="="/>
+        </action>
+        <action id=",">
+            <when state="none" output=","/>
+            <when state="State 0" output=","/>
+        </action>
+        <action id=", 1">
+            <when state="none" output=","/>
+            <when state="State 0" output="."/>
+        </action>
+        <action id="-">
+            <when state="none" output="-"/>
+            <when state="State 0" output="-"/>
+        </action>
+        <action id=".">
+            <when state="none" output="."/>
+            <when state="State 0" output="&#x003C;"/>
+        </action>
+        <action id=". 1">
+            <when state="none" output="."/>
+            <when state="State 0" output="&#x003E;"/>
+        </action>
+        <action id="/">
+            <when state="none" output="/"/>
+            <when state="State 0" output="?"/>
+        </action>
+        <action id="0">
+            <when state="none" output="0"/>
+            <when state="State 0" output="§"/>
+        </action>
+        <action id="0 1">
+            <when state="none" output="0"/>
+            <when state="State 0" output="!"/>
+        </action>
+        <action id="0 2">
+            <when state="none" output="0"/>
+            <when state="State 0" output="@"/>
+        </action>
+        <action id="9">
+            <when state="none" output="9"/>
+            <when state="State 0" output="*"/>
+        </action>
+        <action id=":">
+            <when state="none" output=":"/>
+            <when state="State 0" output=";"/>
+        </action>
+        <action id=": 1">
+            <when state="none" output=":"/>
+            <when state="State 0" output="~"/>
+        </action>
+        <action id=": 2">
+            <when state="none" output=":"/>
+            <when state="State 0" output=":"/>
+        </action>
+        <action id="?">
+            <when state="none" output="?"/>
+            <when state="State 0" output="/"/>
         </action>
         <action id="[">
             <when state="none" output="["/>
             <when state="State 0" output="["/>
         </action>
+        <action id="\">
+            <when state="none" output="\"/>
+            <when state="State 0" output="\"/>
+        </action>
         <action id="]">
             <when state="none" output="]"/>
             <when state="State 0" output="]"/>
         </action>
+        <action id="] 1">
+            <when state="none" output="]"/>
+            <when state="State 0" output="}"/>
+        </action>
+        <action id="^">
+            <when state="none" output="^"/>
+            <when state="State 0" output="%"/>
+        </action>
+        <action id="_">
+            <when state="none" output="_"/>
+            <when state="State 0" output="_"/>
+        </action>
         <action id="a">
             <when state="none" output="a"/>
             <when state="State 0" output="स"/>
+        </action>
+        <action id="a 1">
+            <when state="none" output="a"/>
+            <when state="State 0" output="&#x0022;"/>
         </action>
         <action id="action">
             <when state="none" output=""/>
@@ -471,6 +617,30 @@
         <action id="action 1">
             <when state="none" output=""/>
             <when state="State 0" output="आ"/>
+        </action>
+        <action id="action 2">
+            <when state="none" output=""/>
+            <when state="State 0" output="ा"/>
+        </action>
+        <action id="action 3">
+            <when state="none" output=""/>
+            <when state="State 0" output="ै"/>
+        </action>
+        <action id="{">
+            <when state="none" output="{"/>
+            <when state="State 0" output="{"/>
+        </action>
+        <action id="|">
+            <when state="none" output="|"/>
+            <when state="State 0" output="|"/>
+        </action>
+        <action id="}">
+            <when state="none" output="}"/>
+            <when state="State 0" output=")"/>
+        </action>
+        <action id="~">
+            <when state="none" output="~"/>
+            <when state="State 0" output="`"/>
         </action>
         <action id="इ">
             <when state="none" output="इ"/>
@@ -576,6 +746,22 @@
             <when state="none" output="श"/>
             <when state="State 0" output="श"/>
         </action>
+        <action id="ी">
+            <when state="none" output="ी"/>
+            <when state="State 0" output="ी"/>
+        </action>
+        <action id="े">
+            <when state="none" output="े"/>
+            <when state="State 0" output="े"/>
+        </action>
+        <action id="े 1">
+            <when state="none" output="े"/>
+            <when state="State 0" output="ु"/>
+        </action>
+        <action id="े 2">
+            <when state="none" output="े"/>
+            <when state="State 0" output="ि"/>
+        </action>
         <action id="ो">
             <when state="none" output="ो"/>
             <when state="State 0" output="३"/>
@@ -636,6 +822,14 @@
             <when state="none" output="ो"/>
             <when state="State 0" output="द"/>
         </action>
+        <action id="ो 15">
+            <when state="none" output="ो"/>
+            <when state="State 0" output="ो"/>
+        </action>
+        <action id="ो 16">
+            <when state="none" output="ो"/>
+            <when state="State 0" output="ौ"/>
+        </action>
         <action id="ौ">
             <when state="none" output="ौ"/>
             <when state="State 0" output="४"/>
@@ -651,6 +845,10 @@
         <action id="ौ 3">
             <when state="none" output="ौ"/>
             <when state="State 0" output="व"/>
+        </action>
+        <action id="्े">
+            <when state="none" output="्े"/>
+            <when state="State 0" output="ू"/>
         </action>
         <action id="१">
             <when state="none" output="१"/>
