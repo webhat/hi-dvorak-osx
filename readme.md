@@ -1,6 +1,6 @@
-# NorwegianDvorak.keylayout for Mac OS X
+# DevengariDvorak.keylayout for Mac OS X
 
-This keyboard layout provides a [Norwegian Dvorak][1] keyboard layout
+This keyboard layout provides a Devengari Dvorak keyboard layout
 that provides extended Unicode characters and modifier keys similar to
 the Norwegian QWERTY keyboard layout shipped with OS X.
 
@@ -13,13 +13,13 @@ old Keyboard Suitcase (resource file) keyboard layout format.
 
 ## Installation
 
-1. Download `NorwegianDvorak.keylayout`.
+1. Download `DevengariDvorak.keylayout`.
 2. Move the file to `/Library/Keyboard Layouts`.
 3. Restart the computer.
 4. Open System Preferences,
     go to Language & Text,
     then Input Sources, and
-    tick Norwegian Dvorak in the list of input methods.
+    tick Devengari Dvorak in the list of input methods.
 5. Check "Show input menu in menu bar" to change keyboard layout
     from the menu bar.
 6. To use the keyboard layout on the login screen,
@@ -39,7 +39,6 @@ right, press until it clicks in. You don't need to move the A and M keys.
 
 
 
-[1]: http://dvorak.tg90nor.net/
 [2]: http://developer.apple.com/library/mac/#technotes/tn2002/tn2056.html
 [3]: http://scripts.sil.org/ukelele/  
 [4]: http://wordherd.com/keyboards/
