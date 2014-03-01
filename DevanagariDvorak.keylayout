@@ -1,7 +1,7 @@
 <?XML version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.2.7 on 2014-02-28 at 15:37 (CET)-->
-<!--Last edited by Ukelele version 2.2.7 on 2014-03-01 at 23:31 (CET)-->
+<!--Last edited by Ukelele version 2.2.7 on 2014-03-01 at 23:48 (CET)-->
 <keyboard group="126" id="-12663" name="Devanagari Dvorak" maxout="3">
     <layouts>
         <layout first="0" last="17" modifiers="Modifiers" mapSet="ANSI"/>
@@ -212,9 +212,15 @@
             <key code="4" output="ड"/>
             <key code="5" action="े 2"/>
             <key code="7" output="ङ"/>
+            <key code="18" output="ं"/>
+            <key code="19" output="़"/>
+            <key code="20" output="ॅ"/>
+            <key code="21" output="ँ"/>
+            <key code="23" output="ृ"/>
             <key code="31" action="्े"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="ञ"/>
+            <key code="40" output="ट"/>
             <key code="41" output="श"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
@@ -631,7 +637,7 @@
             <when state="State 0" output="आ"/>
         </action>
         <action id="action 2">
-            <when state="none" output=""/>
+            <when state="none" output="ऍ"/>
             <when state="State 0" output="ा"/>
         </action>
         <action id="action 3">
@@ -815,7 +821,7 @@
             <when state="State 0" output="ध"/>
         </action>
         <action id="ो 10">
-            <when state="none" output=""/>
+            <when state="none" output="ठ"/>
             <when state="State 0" output="ऋ"/>
         </action>
         <action id="ो 11">
