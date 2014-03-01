@@ -2,7 +2,7 @@
 
 This keyboard layout provides a Devengari Dvorak keyboard layout
 that provides extended Unicode characters and modifier keys similar to
-the Norwegian QWERTY keyboard layout shipped with OS X.
+the Dvorak keyboard layout shipped with OS X.
 
 Beginning with version 10.2 (Jaguar), Mac OS X started supporting the
 [XML-based format for keyboard layouts (.keylayout files)][2] which is
